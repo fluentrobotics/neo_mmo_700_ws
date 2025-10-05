@@ -12,7 +12,7 @@
 	branch = master
 [submodule "src/neo_kinematics_omnidrive2"]
 	path = src/neo_kinematics_omnidrive2
-	url = https://github.com/neobotix/neo_kinematics_omnidrive2
+	url = git@github.com:elvout/neo_kinematics_omnidrive2
 	branch = jazzy
 [submodule "src/neo_localization2"]
 	path = src/neo_localization2
