@@ -1,0 +1,52 @@
+[submodule "src/joystick_drivers"]
+	path = src/joystick_drivers
+	url = https://github.com/neobotix/joystick_drivers
+	branch = ros2
+[submodule "src/mp_utils"]
+	path = src/mp_utils
+	url = https://github.com/neobotix/mp_utils
+	branch = jazzy
+[submodule "src/neo_common2"]
+	path = src/neo_common2
+	url = https://github.com/neobotix/neo_common2
+	branch = master
+[submodule "src/neo_kinematics_omnidrive2"]
+	path = src/neo_kinematics_omnidrive2
+	url = https://github.com/neobotix/neo_kinematics_omnidrive2
+	branch = jazzy
+[submodule "src/neo_localization2"]
+	path = src/neo_localization2
+	url = https://github.com/neobotix/neo_localization2
+	branch = jazzy
+[submodule "src/neo_local_planner2"]
+	path = src/neo_local_planner2
+	url = https://github.com/neobotix/neo_local_planner2
+	branch = jazzy
+[submodule "src/neo_mpo_700-2"]
+	path = src/neo_mpo_700-2
+	url = https://github.com/neobotix/neo_mpo_700-2
+	branch = jazzy
+[submodule "src/neo_mpo_moveit2"]
+	path = src/neo_mpo_moveit2
+	url = https://github.com/neobotix/neo_mpo_moveit2
+	branch = jazzy
+[submodule "src/neo_msgs2"]
+	path = src/neo_msgs2
+	url = https://github.com/neobotix/neo_msgs2
+	branch = master
+[submodule "src/neo_relayboard_v2-2"]
+	path = src/neo_relayboard_v2-2
+	url = https://github.com/neobotix/neo_relayboard_v2-2
+	branch = jazzy
+[submodule "src/neo_sick_s300-2"]
+	path = src/neo_sick_s300-2
+	url = https://github.com/neobotix/neo_sick_s300-2
+	branch = jazzy
+[submodule "src/neo_srvs2"]
+	path = src/neo_srvs2
+	url = https://github.com/neobotix/neo_srvs2
+	branch = master
+[submodule "src/neo_teleop2"]
+	path = src/neo_teleop2
+	url = https://github.com/neobotix/neo_teleop2
+	branch = jazzy
