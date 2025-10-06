@@ -1,0 +1,16 @@
+name: workspace build
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/fluentrobotics/ros:jazzy-neo
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: "recursive"
+      - name: Build workspace
+        run: make
