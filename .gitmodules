@@ -12,7 +12,7 @@
 	branch = master
 [submodule "src/neo_kinematics_omnidrive2"]
 	path = src/neo_kinematics_omnidrive2
-	url = git@github.com:elvout/neo_kinematics_omnidrive2
+	url = git@github.com:fluentrobotics/neo_kinematics_omnidrive2
 	branch = jazzy
 [submodule "src/neo_localization2"]
 	path = src/neo_localization2
@@ -24,11 +24,11 @@
 	branch = jazzy
 [submodule "src/neo_mpo_700-2"]
 	path = src/neo_mpo_700-2
-	url = git@github.com:elvout/neo_mpo_700-2
+	url = git@github.com:fluentrobotics/neo_mpo_700-2
 	branch = jazzy
 [submodule "src/neo_mpo_moveit2"]
 	path = src/neo_mpo_moveit2
-	url = git@github.com:elvout/neo_mpo_moveit2
+	url = git@github.com:fluentrobotics/neo_mpo_moveit2
 	branch = jazzy
 [submodule "src/neo_msgs2"]
 	path = src/neo_msgs2
@@ -48,9 +48,9 @@
 	branch = master
 [submodule "src/neo_teleop2"]
 	path = src/neo_teleop2
-	url = git@github.com:elvout/neo_teleop2
+	url = git@github.com:fluentrobotics/neo_teleop2
 	branch = jazzy
 [submodule "src/ros2_vg10_gripper"]
 	path = src/ros2_vg10_gripper
-	url = git@github.com:elvout/ros2_vg10_gripper
+	url = git@github.com:fluentrobotics/ros2_vg10_gripper
 	branch = main
