@@ -54,3 +54,7 @@
 	path = src/ros2_vg10_gripper
 	url = git@github.com:fluentrobotics/ros2_vg10_gripper
 	branch = main
+[submodule "ros2-mocap_optitrack"]
+	path = src/ros2-mocap_optitrack
+	url = git@github.com:fluentrobotics/ros2-mocap_optitrack
+	branch = fluent/elephant-params
