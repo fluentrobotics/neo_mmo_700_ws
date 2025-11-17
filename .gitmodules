@@ -54,3 +54,11 @@
 	path = src/ros2_vg10_gripper
 	url = git@github.com:fluentrobotics/ros2_vg10_gripper
 	branch = main
+[submodule "src/cartesian_controllers"]
+	path = src/cartesian_controllers
+	url = git@github.com:fzi-forschungszentrum-informatik/cartesian_controllers
+	branch = ros2
+[submodule "src/ridgeback_ur5_controller"]
+	path = src/ridgeback_ur5_controller
+	url = git@github.com:elvout/ridgeback_ur5_controller.git
+	branch = devel
