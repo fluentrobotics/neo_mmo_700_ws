@@ -58,3 +58,9 @@
 	path = src/ros2-mocap_optitrack
 	url = git@github.com:fluentrobotics/ros2-mocap_optitrack
 	branch = fluent/elephant-params
+[submodule "src/osqp-eigen"]
+	path = src/osqp-eigen
+	url = git@github.com:elvout/osqp-eigen
+[submodule "src/neo_mmo_700_control"]
+	path = src/neo_mmo_700_control
+	url = git@github.com:fluentrobotics/neo_mmo_700_control
