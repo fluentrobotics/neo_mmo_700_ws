@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/fluentrobotics/ros:jazzy-neo
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
+          ssh-key: ${{ secrets.SUBMODULE_SSH_KEY }}
+          persist-credentials: false
           submodules: "recursive"
       - name: Build workspace
         run: make
