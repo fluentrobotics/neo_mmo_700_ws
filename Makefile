@@ -7,7 +7,12 @@ GREEN   := \033[1;32m
 RESET   := \033[0m
 
 all:
-	AMENT_PREFIX_PATH= CMAKE_PREFIX_PATH= COLCON_PREFIX_PATH= . /opt/ros/jazzy/setup.sh && MAKEFLAGS= colcon build --symlink-install
+	AMENT_PREFIX_PATH= CMAKE_PREFIX_PATH= COLCON_PREFIX_PATH= . /opt/ros/jazzy/setup.sh && \
+	MAKEFLAGS= colcon build \
+		--symlink-install \
+		--cmake-args \
+			-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+			-DCMAKE_BUILD_TYPE=Release
 	@echo "\n$(YELLOW)⚠ Remember to source install/setup.zsh$(RESET)\n"
 
 clean:
