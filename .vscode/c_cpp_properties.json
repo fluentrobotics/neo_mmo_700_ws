@@ -2,15 +2,10 @@
     "configurations": [
         {
             "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/src/**",
-                "${workspaceFolder}/install/**",
-                "/opt/ros/jazzy/include/**",
-                "/usr/include/eigen3"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang",
-            "intelliSenseMode": "linux-clang-x64"
+            "compilerPath": "/usr/bin/clang++",
+            "intelliSenseMode": "linux-clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
