@@ -12,7 +12,9 @@ all:
 		--symlink-install \
 		--cmake-args \
 			-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-			-DCMAKE_BUILD_TYPE=Release
+			-DCMAKE_BUILD_TYPE=Release \
+			-DCMAKE_C_COMPILER=clang \
+			-DCMAKE_CXX_COMPILER=clang++
 	@echo "\n$(YELLOW)⚠ Remember to source install/setup.zsh$(RESET)\n"
 
 clean:
