@@ -6,10 +6,20 @@ RED     := \033[1;31m
 GREEN   := \033[1;32m
 RESET   := \033[0m
 
+# TODO: should we just remove some of these submodules from the workspace?
 all: check-relayboard-service
 	AMENT_PREFIX_PATH= CMAKE_PREFIX_PATH= COLCON_PREFIX_PATH= . /opt/ros/jazzy/setup.sh && \
 	MAKEFLAGS= colcon build \
 		--symlink-install \
+		--packages-skip \
+			joy \
+			joy_linux \
+			mocap_optitrack_inv_kin \
+			mocap_optitrack_w2b \
+			neo_local_planner2 \
+			neo_localization2 \
+			neo_sick_s300-2 \
+			sdl2_vendor \
 		--cmake-args \
 			-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 			-DCMAKE_BUILD_TYPE=Release \
