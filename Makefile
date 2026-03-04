@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: all clean check-relayboard-service
 
 # ANSI escape codes
 YELLOW  := \033[1;33m
@@ -6,7 +6,7 @@ RED     := \033[1;31m
 GREEN   := \033[1;32m
 RESET   := \033[0m
 
-all:
+all: check-relayboard-service
 	AMENT_PREFIX_PATH= CMAKE_PREFIX_PATH= COLCON_PREFIX_PATH= . /opt/ros/jazzy/setup.sh && \
 	MAKEFLAGS= colcon build \
 		--symlink-install \
@@ -19,3 +19,11 @@ all:
 
 clean:
 	rm -rf build/ install/ log/
+
+check-relayboard-service:
+	@case "$$(hostname -s)" in mmo-700*) \
+		systemctl cat neo-relayboard.service >/dev/null 2>&1 || { \
+			echo "$(RED)[ERROR] neo-relayboard.service not installed. Follow the setup instructions in the README.$(RESET)"; \
+			exit 1; \
+		};; \
+	esac

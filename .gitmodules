@@ -36,8 +36,8 @@
 	branch = master
 [submodule "src/neo_relayboard_v2-2"]
 	path = src/neo_relayboard_v2-2
-	url = https://github.com/neobotix/neo_relayboard_v2-2
-	branch = jazzy
+	url = git@github.com:fluentrobotics/neo_relayboard_v2-2
+	branch = rolling
 [submodule "src/neo_sick_s300-2"]
 	path = src/neo_sick_s300-2
 	url = https://github.com/neobotix/neo_sick_s300-2
