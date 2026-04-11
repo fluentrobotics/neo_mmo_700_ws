@@ -23,6 +23,7 @@
         "--volume=/etc/passwd:/etc/passwd:ro",
         "--volume=/etc/shadow:/etc/shadow:ro",
         "--volume=${localEnv:HOME}:${localEnv:HOME}",
+        "--privileged",
         // "--runtime=nvidia",
         // "--gpus=all",
         // "--env=NVIDIA_DRIVER_CAPABILITIES=all",
