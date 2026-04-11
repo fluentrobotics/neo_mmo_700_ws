@@ -6,7 +6,6 @@ RED     := \033[1;31m
 GREEN   := \033[1;32m
 RESET   := \033[0m
 
-# TODO: should we just remove some of these submodules from the workspace?
 all: check-relayboard-service
 	AMENT_PREFIX_PATH= CMAKE_PREFIX_PATH= COLCON_PREFIX_PATH= . /opt/ros/jazzy/setup.sh && \
 	MAKEFLAGS= colcon build \
