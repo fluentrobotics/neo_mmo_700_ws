@@ -1,5 +1,10 @@
 #! /usr/bin/env python3
 
+"""
+This is an internal tool generated with Codex assistance and was not originally
+intended to be modified by hand.
+"""
+
 import argparse
 import os
 import sys
