@@ -12,14 +12,8 @@ all: check-relayboard-service
 	MAKEFLAGS= colcon build \
 		--symlink-install \
 		--packages-skip \
-			joy \
-			joy_linux \
 			mocap_optitrack_inv_kin \
 			mocap_optitrack_w2b \
-			neo_local_planner2 \
-			neo_localization2 \
-			neo_sick_s300-2 \
-			sdl2_vendor \
 		--cmake-args \
 			-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 			-DCMAKE_BUILD_TYPE=Release \
