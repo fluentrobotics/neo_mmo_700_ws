@@ -1,4 +1,15 @@
 {
     "files.trimTrailingWhitespace": false,
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+    "[latex]": {
+        "editor.wordWrap": "bounded"
+    },
+    "ty.configuration": {
+        "environment": {
+            "extra-paths": [
+                "install/neo_mmo_700_control/lib/python3.12/site-packages",
+                "install/neo_msgs2/lib/python3.12/site-packages",
+            ]
+        }
+    }
 }
