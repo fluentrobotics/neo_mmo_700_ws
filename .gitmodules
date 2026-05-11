@@ -64,3 +64,6 @@
 [submodule "src/neo_mmo_700_control"]
 	path = src/neo_mmo_700_control
 	url = git@github.com:fluentrobotics/neo_mmo_700_control
+[submodule "src/objvel_collab_transport"]
+	path = src/objvel_collab_transport
+	url = git@github.com:elvout/objvel_collab_transport
