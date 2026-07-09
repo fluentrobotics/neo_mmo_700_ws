@@ -5,6 +5,7 @@
             <AllowMulticast>spdp</AllowMulticast>
             <Interfaces>
                 <NetworkInterface name="enx00e04c205510" multicast="default" />
+                <NetworkInterface name="wlp166s0" multicast="default" />
             </Interfaces>
         </General>
         <Discovery>
