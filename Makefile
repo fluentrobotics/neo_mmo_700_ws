@@ -14,10 +14,11 @@ all: check-relayboard-service
 			mocap_optitrack_inv_kin \
 			mocap_optitrack_w2b \
 		--cmake-args \
+			--no-warn-unused-cli \
 			-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 			-DCMAKE_BUILD_TYPE=Release \
-			-DCMAKE_C_COMPILER=clang \
-			-DCMAKE_CXX_COMPILER=clang++
+			-DCMAKE_C_COMPILER=clang-20 \
+			-DCMAKE_CXX_COMPILER=clang++-20
 	@echo "\n$(YELLOW)⚠ Remember to source install/setup.zsh$(RESET)\n"
 
 clean:
