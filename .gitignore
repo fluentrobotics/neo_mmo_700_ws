@@ -2,5 +2,10 @@ build/
 install/
 log/
 
+/.cache/
 __pycache__/
 .mypy_cache/
+
+/AGENTS.md
+/.agents/
+/.codex/
