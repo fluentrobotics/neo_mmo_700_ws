@@ -2,6 +2,9 @@
 
 set -o errexit
 
-source install/setup.bash
+workspace_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 
-ros2 launch launch/laptop.launch.yaml
+source "$workspace_root/install/setup.bash"
+
+ros2 launch "$workspace_root/launch/laptop.launch.yaml" \
+    ur_calibration_file:="$workspace_root/config/ur_calibration_20255201255.yaml"
