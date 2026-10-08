@@ -4,7 +4,7 @@
 # 	branch = ros2
 [submodule "src/mp_utils"]
 	path = src/mp_utils
-	url = https://github.com/neobotix/mp_utils
+	url = git@github.com:fluentrobotics/mp_utils
 	branch = jazzy
 [submodule "src/neo_common2"]
 	path = src/neo_common2
